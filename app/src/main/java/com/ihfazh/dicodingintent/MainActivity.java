@@ -3,6 +3,7 @@ package com.ihfazh.dicodingintent;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,6 +23,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button pindah_intent_data = findViewById(R.id.btn_pindah_intent_dengan_data);
         pindah_intent_data.setOnClickListener(this);
+
+        Button dialNumber = findViewById(R.id.dial_number);
+        dialNumber.setOnClickListener(this);
     }
 
     @Override
@@ -36,6 +40,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 pindahIntendData.putExtra(STRING_AGE, 10);
                 pindahIntendData.putExtra(STRING_NAMA, "Muhammad Ihfazhillah");
                 startActivity(pindahIntendData);
+                break;
+            case R.id.dial_number:
+                String phoneNumber = "082332661775";
+                Intent dial = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + phoneNumber));
+                startActivity(dial);
                 break;
         }
 

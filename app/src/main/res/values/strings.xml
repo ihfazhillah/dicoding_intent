@@ -3,4 +3,5 @@
     <string name="pindah_intent">Pindah Intent</string>
     <string name="ini_adalah_pindah_activity">Ini adalah Pindah Activity</string>
     <string name="pindah_dengan_data">Pindah Dengan Data</string>
+    <string name="dial_number">Dial Number</string>
 </resources>

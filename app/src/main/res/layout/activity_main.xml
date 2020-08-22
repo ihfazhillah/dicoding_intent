@@ -22,4 +22,11 @@
             android:id="@+id/btn_pindah_intent_dengan_data"
             android:layout_marginBottom="16dp"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dial_number"
+            android:id="@+id/dial_number"
+            android:layout_marginBottom="16dp"/>
+
 </LinearLayout>
