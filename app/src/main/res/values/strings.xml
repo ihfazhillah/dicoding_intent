@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Dicoding Intent</string>
+    <string name="pindah_intent">Pindah Intent</string>
+    <string name="ini_adalah_pindah_activity">Ini adalah Pindah Activity</string>
+</resources>
